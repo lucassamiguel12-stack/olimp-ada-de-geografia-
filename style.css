@@ -15,52 +15,32 @@ body {
   line-height: 1.6;
 }
 
+
+/* =========================
+   MENU OCULTO
+========================= */
+
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #ffffff;
-  border-bottom: 1px solid #dce8df;
+  display: none;
 }
 
-nav {
-  max-width: 1100px;
-  margin: auto;
-  padding: 18px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
 
-nav h2 {
-  font-size: 20px;
-}
-
-.menu {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.menu a {
-  color: #18352a;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
+/* =========================
+   INÍCIO
+========================= */
 
 .hero {
-  min-height: 620px;
+  min-height: 650px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 80px 20px;
+
   background:
-    linear-gradient(rgba(10, 55, 38, 0.72), rgba(10, 55, 38, 0.72)),
-    url("IMG_0149.jpeg") center/cover;
+    linear-gradient(
+      rgba(10, 55, 38, 0.88),
+      rgba(10, 55, 38, 0.88)
+    );
 }
 
 .hero-conteudo {
@@ -100,6 +80,11 @@ nav h2 {
   font-weight: bold;
 }
 
+
+/* =========================
+   SEÇÕES
+========================= */
+
 .secao {
   max-width: 1100px;
   margin: auto;
@@ -118,6 +103,11 @@ nav h2 {
   margin-bottom: 40px;
 }
 
+
+/* =========================
+   CARDS
+========================= */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -126,6 +116,7 @@ nav h2 {
 
 .card {
   background: white;
+  color: #18352a;
   padding: 30px;
   border-radius: 18px;
   border: 1px solid #dce8df;
@@ -141,7 +132,17 @@ nav h2 {
 .card h3 {
   margin-bottom: 10px;
   font-size: 22px;
+  color: #18352a;
 }
+
+.card p {
+  color: #315344;
+}
+
+
+/* =========================
+   SEÇÕES VERDES
+========================= */
 
 .destaque {
   max-width: none;
@@ -155,6 +156,24 @@ nav h2 {
   margin-right: auto;
 }
 
+.destaque .card {
+  background: white;
+  color: #18352a;
+}
+
+.destaque .card h3 {
+  color: #18352a;
+}
+
+.destaque .card p {
+  color: #315344;
+}
+
+
+/* =========================
+   RIOS
+========================= */
+
 .rios {
   max-width: 1100px;
   display: grid;
@@ -165,14 +184,24 @@ nav h2 {
 
 .rio {
   padding: 30px;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .rio h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+.rio p {
+  color: white;
+}
+
+
+/* =========================
+   DESAFIOS
+========================= */
 
 .desafios {
   background: #e8f1eb;
@@ -188,9 +217,25 @@ nav h2 {
 
 .lista-desafios div {
   background: white;
+  color: #18352a;
   padding: 22px;
   border-radius: 14px;
 }
+
+
+/* =========================
+   LISTAS NAS SEÇÕES VERDES
+========================= */
+
+.destaque .lista-desafios div {
+  background: white;
+  color: #18352a;
+}
+
+
+/* =========================
+   QUIZ
+========================= */
 
 .quiz {
   text-align: center;
@@ -200,9 +245,11 @@ nav h2 {
   max-width: 700px;
   margin: 30px auto 0;
   background: white;
+  color: #18352a;
   padding: 30px;
   border-radius: 20px;
   border: 1px solid #dce8df;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .pergunta h3 {
@@ -215,6 +262,7 @@ nav h2 {
   margin: 7px 0;
   border: 1px solid #cbd9cf;
   background: #f4f8f5;
+  color: #18352a;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
@@ -225,11 +273,34 @@ nav h2 {
   background: #e1ece4;
 }
 
-#resultado {
+.pergunta button:disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.resultado {
   margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
 }
+
+.pontuacao {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 25px;
+  background: #18352a;
+  color: white;
+  border-radius: 18px;
+}
+
+.pontuacao h3 {
+  font-size: 24px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
 
 footer {
   background: #10251c;
@@ -238,21 +309,37 @@ footer {
   padding: 30px 20px;
 }
 
-@media (max-width: 750px) {
-  nav {
-    flex-direction: column;
-  }
 
-  .menu {
-    justify-content: center;
-  }
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 750px) {
 
   .hero {
-    min-height: 550px;
+    min-height: 600px;
+    padding: 70px 20px;
   }
 
   .cards,
   .rios {
     grid-template-columns: 1fr;
   }
+
+  .secao {
+    padding: 70px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
 }

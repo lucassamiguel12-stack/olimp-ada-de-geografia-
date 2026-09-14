@@ -17,7 +17,7 @@ body {
 
 
 /* =========================
-   MENU OCULTO
+   MENU
 ========================= */
 
 header {
@@ -41,21 +41,21 @@ header {
       rgba(10, 55, 38, 0.88),
       rgba(10, 55, 38, 0.88)
     );
+
+  color: white;
 }
 
 .hero-conteudo {
   max-width: 900px;
   margin: auto;
-  color: white;
   text-align: center;
 }
 
-.subtitulo,
-.rotulo {
-  font-size: 13px;
+.subtitulo {
+  font-size: 14px;
   font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
 }
 
 .hero h1 {
@@ -66,13 +66,13 @@ header {
 
 .hero p {
   font-size: 19px;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto 30px;
 }
 
 .botao {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 15px 26px;
   background: white;
   color: #18352a;
   border-radius: 30px;
@@ -97,8 +97,16 @@ header {
   margin-bottom: 20px;
 }
 
+.rotulo {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #387357;
+}
+
 .texto {
-  max-width: 750px;
+  max-width: 800px;
   font-size: 18px;
   margin-bottom: 40px;
 }
@@ -120,7 +128,7 @@ header {
   padding: 30px;
   border-radius: 18px;
   border: 1px solid #dce8df;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
 .card span {
@@ -130,9 +138,9 @@ header {
 }
 
 .card h3 {
+  color: #18352a;
   margin-bottom: 10px;
   font-size: 22px;
-  color: #18352a;
 }
 
 .card p {
@@ -144,28 +152,40 @@ header {
    SEÇÕES VERDES
 ========================= */
 
-.destaque {
+.verde {
   max-width: none;
   background: #18352a;
   color: white;
 }
 
-.destaque > * {
+.verde > * {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.destaque .card {
+.verde h2 {
+  color: white;
+}
+
+.verde .rotulo {
+  color: #b8d8c3;
+}
+
+.verde .texto {
+  color: white;
+}
+
+.verde .card {
   background: white;
   color: #18352a;
 }
 
-.destaque .card h3 {
+.verde .card h3 {
   color: #18352a;
 }
 
-.destaque .card p {
+.verde .card p {
   color: #315344;
 }
 
@@ -175,7 +195,6 @@ header {
 ========================= */
 
 .rios {
-  max-width: 1100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -184,50 +203,71 @@ header {
 
 .rio {
   padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: white;
+  color: #18352a;
+  border: 1px solid #dce8df;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
 .rio h3 {
+  color: #18352a;
   font-size: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .rio p {
-  color: white;
+  color: #315344;
 }
 
 
 /* =========================
-   DESAFIOS
+   SEÇÕES CINZAS
 ========================= */
 
-.desafios {
-  background: #e8f1eb;
+.cinza {
   max-width: none;
+  background: #e8f1eb;
 }
 
-.lista-desafios {
+.cinza > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cinza h2 {
+  color: #18352a;
+}
+
+.cinza .texto {
+  color: #315344;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+.lista {
   max-width: 900px;
   margin: 30px auto 0;
   display: grid;
   gap: 15px;
 }
 
-.lista-desafios div {
+.lista div {
   background: white;
   color: #18352a;
   padding: 22px;
   border-radius: 14px;
+  border: 1px solid #dce8df;
 }
 
 
-/* =========================
-   LISTAS NAS SEÇÕES VERDES
-========================= */
+/* Lista em seção verde */
 
-.destaque .lista-desafios div {
+.verde .lista div {
   background: white;
   color: #18352a;
 }
@@ -241,6 +281,11 @@ header {
   text-align: center;
 }
 
+.quiz .texto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pergunta {
   max-width: 700px;
   margin: 30px auto 0;
@@ -249,10 +294,11 @@ header {
   padding: 30px;
   border-radius: 20px;
   border: 1px solid #dce8df;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
 .pergunta h3 {
+  color: #18352a;
   margin-bottom: 25px;
 }
 
@@ -294,6 +340,7 @@ header {
 }
 
 .pontuacao h3 {
+  color: white;
   font-size: 24px;
 }
 
@@ -321,15 +368,6 @@ footer {
     padding: 70px 20px;
   }
 
-  .cards,
-  .rios {
-    grid-template-columns: 1fr;
-  }
-
-  .secao {
-    padding: 70px 20px;
-  }
-
   .hero h1 {
     font-size: 48px;
   }
@@ -338,7 +376,23 @@ footer {
     font-size: 17px;
   }
 
+  .secao {
+    padding: 70px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rios {
+    grid-template-columns: 1fr;
+  }
+
   .card {
+    padding: 25px;
+  }
+
+  .rio {
     padding: 25px;
   }
 

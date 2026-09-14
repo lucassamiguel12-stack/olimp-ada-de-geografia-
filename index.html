@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transporte Fluvial na Amazônia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h2>🌿 Amazônia Fluvial</h2>
+
+      <div class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#importancia">Importância</a>
+        <a href="#rios">Rios</a>
+        <a href="#embarcacoes">Embarcações</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <p class="subtitulo">GEOGRAFIA • AMAZÔNIA</p>
+        <h1>Transporte Fluvial<br>na Amazônia</h1>
+        <p>
+          Onde os rios funcionam como verdadeiras estradas,
+          conectando pessoas, cidades e comunidades.
+        </p>
+
+        <a href="#importancia" class="botao">Explorar o tema ↓</a>
+      </div>
+    </section>
+
+    <section id="importancia" class="secao">
+      <p class="rotulo">01 • IMPORTÂNCIA</p>
+      <h2>Os rios são caminhos essenciais</h2>
+
+      <p class="texto">
+        Na Amazônia, os rios possuem um papel fundamental no transporte
+        de pessoas e mercadorias. Em muitas regiões, as vias fluviais
+        são a principal forma de ligação entre comunidades e cidades.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <span>👨‍👩‍👧‍👦</span>
+          <h3>Pessoas</h3>
+          <p>
+            Milhares de pessoas utilizam barcos para se deslocar
+            entre comunidades e cidades.
+          </p>
+        </div>
+
+        <div class="card">
+          <span>📦</span>
+          <h3>Mercadorias</h3>
+          <p>
+            Alimentos, combustíveis e outros produtos são transportados
+            pelos rios.
+          </p>
+        </div>
+
+        <div class="card">
+          <span>🏘️</span>
+          <h3>Comunidades</h3>
+          <p>
+            O transporte fluvial ajuda a conectar comunidades
+            distantes dos grandes centros urbanos.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="rios" class="secao destaque">
+      <p class="rotulo">02 • HIDROGRAFIA</p>
+      <h2>Principais rios utilizados</h2>
+
+      <div class="rios">
+
+        <div class="rio">
+          <h3>🌊 Rio Amazonas</h3>
+          <p>
+            Um dos principais rios da região e uma importante rota
+            para o transporte de pessoas e cargas.
+          </p>
+        </div>
+
+        <div class="rio">
+          <h3>🌊 Rio Negro</h3>
+          <p>
+            Importante via de transporte na região de Manaus
+            e de diversas comunidades.
+          </p>
+        </div>
+
+        <div class="rio">
+          <h3>🌊 Rio Madeira</h3>
+          <p>
+            Possui grande importância para o transporte de cargas
+            e para a economia regional.
+          </p>
+        </div>
+
+        <div class="rio">
+          <h3>🌊 Rio Solimões</h3>
+          <p>
+            Forma uma importante rede de circulação fluvial
+            na Amazônia.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="embarcacoes" class="secao">
+      <p class="rotulo">03 • EMBARCAÇÕES</p>
+      <h2>Como as pessoas se deslocam?</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <span>🚤</span>
+          <h3>Voadeiras</h3>
+          <p>Pequenas embarcações rápidas usadas em deslocamentos.</p>
+        </div>
+
+        <div class="card">
+          <span>🛥️</span>
+          <h3>Lanchas</h3>
+          <p>Utilizadas principalmente para transportar passageiros.</p>
+        </div>
+
+        <div class="card">
+          <span>🚢</span>
+          <h3>Barcos</h3>
+          <p>Podem transportar pessoas, alimentos e diversos produtos.</p>
+        </div>
+
+        <div class="card">
+          <span>⚓</span>
+          <h3>Balsas</h3>
+          <p>Utilizadas principalmente para transportar cargas pesadas.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="desafios" class="secao desafios">
+      <p class="rotulo">04 • DESAFIOS</p>
+      <h2>Os desafios do transporte fluvial</h2>
+
+      <div class="lista-desafios">
+        <div>🌵 <strong>Secas:</strong> a redução do nível dos rios pode dificultar a navegação.</div>
+        <div>🌧️ <strong>Cheias:</strong> grandes volumes de água também podem causar problemas.</div>
+        <div>🛠️ <strong>Infraestrutura:</strong> algumas regiões possuem pouca estrutura portuária.</div>
+        <div>🛟 <strong>Segurança:</strong> acidentes e condições de navegação exigem atenção.</div>
+      </div>
+    </section>
+
+    <section id="quiz" class="secao quiz">
+      <p class="rotulo">05 • TESTE SEUS CONHECIMENTOS</p>
+      <h2>Quiz da Amazônia 🌿</h2>
+
+      <div class="pergunta">
+        <h3>Qual é a principal função do transporte fluvial na Amazônia?</h3>
+
+        <button onclick="responder(false)">A) Transporte apenas de turistas</button>
+        <button onclick="responder(true)">B) Transportar pessoas e mercadorias</button>
+        <button onclick="responder(false)">C) Substituir todos os aeroportos</button>
+        <button onclick="responder(false)">D) Transportar apenas alimentos</button>
+
+        <p id="resultado"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>🌿 Trabalho de Geografia • Transporte Fluvial na Amazônia</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

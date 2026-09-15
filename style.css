@@ -409,4 +409,40 @@ footer p {
     font-size: 17px;
   }
 
+}/* =========================
+   MAPA DA AMAZÔNIA
+========================= */
+
+.mapa-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 35px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mapa-amazonia {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+  .mapa-container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .mapa-amazonia {
+    width: 100%;
+    height: auto;
+  }
+
 }
